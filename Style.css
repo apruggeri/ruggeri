@@ -1,0 +1,139 @@
+
+/* selectores generales */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: calibri, segoe ui, sans-serif;
+}
+/* selectores multiples (,) */
+header, footer{
+    padding-bottom: 14px;
+    color: #eee; /*RGB - hex 00=min FF=max*/
+    background-color: #5A5A5A;
+}
+.imagenflotante {
+    box-shadow: 0px, 2px, 10px, rgba(0,0,0,0.3);
+    z-index: 100;
+    
+}
+/* selectores especificos (padre hijo) */
+nav ul{
+    list-style: none;
+    background-color: #1E1E1E;
+    text-align: center;
+    font-size: 11px;
+    list-style-type:none;
+    margin-bottom: 0;
+}
+nav li{
+    display: inline-block;
+    padding: 10px;
+    padding-bottom: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+nav a{
+    color: #ccc;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #02A1B7;
+    text-decoration: none;
+}
+/*selector de Class (.class)*/
+/*selector de Id (#id)*/
+#nav a{
+    font-weight: bold;
+    font-size: 20px;
+}
+.claselogo {
+    align-self: center;
+    margin-left: 30px;
+}
+.bannerprincipal {
+    display: flex;
+    max-width: 100%;
+    height: 80vh;
+    background-attachment: fixed, scroll;
+    background-image:
+    url(img/fondo-bosque.png),
+    url(img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:0;
+    margin: 0;
+}
+.bannerprincipal a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 0;
+    margin: 0;
+}
+.cajadetextobanner {
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.box {
+    flex-basis: 50%;
+    text-align: left;
+    align-self: center;
+}
+span {
+    font-size: 18px;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.h1banner{
+    font-size: 25px;
+    line-height: .9;
+}
+.pbanner{
+    font-size: 16px;
+    line-height: 1.5;
+}
+.botones{
+    display: flex;
+    margin-top: 30px;
+    flex-flow: row wrap;
+}
+.botones .btn1 {
+    flex-basis: 30%;
+    border: solid 2px;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.botones .btn2{
+    flex-basis: 30%;
+    background-color:#02A1B7;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.botones .btn1:hover{
+    background-color: white;
+    color:#1E1E1E;
+    border-color:#1E1E1E;
+}
+.botones .btn2:hover{
+    background-color:#9062D4;
+    color:#fff;
+}
+footer{
+    text-align: center;
+}
